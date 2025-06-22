@@ -5,9 +5,11 @@ const Footer = () => {
 
   return (
     <footer>
-      <span>© {currentYear}</span>
-      <span className="copyricht"> Pragmatisch® </span>
-      <span>— Alle rechten voorbehouden</span>
+      <div className="divider"></div>
+      <span className="copyricht">
+        Pragmatisch B.V. © {currentYear} — Alle rechten voorbehouden
+      </span>
+      <div className="divider"></div>
     </footer>
   );
 };
