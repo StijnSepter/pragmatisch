@@ -1,0 +1,92 @@
+.header {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    height: 64px;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937; /* Tailwind's gray-800 */
+}
+
+.right-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.flags {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+.hamburger-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #3b4ddc;
+    color: white;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.mobile-nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: white;
+}
+
+.mobile-nav a:hover {
+    background-color: #2d3cbf;
+}
+
+/* Desktop nav (optional future use)
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: #3b4ddc;
+  color: white;
+}
+
+.nav ul {
+  display: flex;
+}
+
+.nav li {
+  padding: 0.75rem 1.5rem;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+.nav li:hover {
+  background-color: #2d3cbf;
+}
+*/
