@@ -4,6 +4,7 @@ import papaImage from "../assets/papa.png";
 const HomePage = () => {
   return (
     <main>
+      <h1>Wat is pragmatisch</h1>
       <div className="main_container">
         <div>
           <p>

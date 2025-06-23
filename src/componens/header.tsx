@@ -1,18 +1,24 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo_pragmatisch.png";
+import { useNavigate } from "react-router-dom";
 import "./css/header.css";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
+  const navigate = useNavigate();
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const handleNavigation = (path: string) => {
+    navigate(path);
+    setIsOpen(false); // close the menu
+  };
 
   return (
     <header className="header">
       <div className="header-top">
         {/* Logo */}
-        <div className="logo-container">
+        <div className="logo-container" onClick={() => handleNavigation("/")}>
           <img src={logo} alt="Pragmatisch Logo" className="logo" />
           <h1 className="site-title">Pragmatisch</h1>
         </div>
@@ -30,21 +36,14 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile nav menu */}
       {isOpen && (
         <nav className="mobile-nav">
-          {[
-            "Home",
-            "About",
-            "Services",
-            "Assignments",
-            "Products",
-            "Contact",
-          ].map((item, index) => (
-            <a href="#" key={index}>
-              {item}
-            </a>
-          ))}
+          <ul className="mobile-nav-list">
+            <li onClick={() => handleNavigation("/")}>Home</li>
+            <li onClick={() => handleNavigation("/contact")}>Contact</li>
+            <li onClick={() => handleNavigation("/ervaring")}>Ervaring</li>
+            <li onClick={() => handleNavigation("/producten")}>Producten</li>
+          </ul>
         </nav>
       )}
     </header>
