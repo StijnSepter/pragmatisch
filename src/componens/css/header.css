@@ -75,3 +75,57 @@
     background-color: #2d3cbf;
 }
 
+
+/* DESKTOP NAV */
+.desktop-nav {
+    display: none; /* hide by default on mobile */
+}
+
+.desktop-nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav-list li {
+    cursor: pointer;
+    padding: 0.5rem;
+    font-weight: 500;
+    color: #1f2937;
+    transition: color 0.2s;
+}
+
+.desktop-nav-list li:hover {
+    color: #3b4ddc; /* primary blue */
+}
+
+@media (min-width: 1028px) {
+    .hamburger-btn {
+        display: none; /* hide hamburger on large screens */
+    }
+
+    .mobile-nav {
+        display: none; /* hide mobile nav on large screens */
+    }
+
+    .desktop-nav {
+        display: block; /* show desktop nav on large screens */
+    }
+
+    .right-controls {
+        gap: 2rem;
+    }
+
+    .header-top {
+        align-items: center;
+    }
+
+    .desktop-nav {
+        margin-right: auto;
+        margin-left: 2rem;
+    }
+}
+
+

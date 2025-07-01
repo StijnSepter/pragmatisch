@@ -11,7 +11,7 @@ const Header = () => {
 
   const handleNavigation = (path: string) => {
     navigate(path);
-    setIsOpen(false); // close the menu
+    setIsOpen(false); // close the mobile menu
   };
 
   return (
@@ -23,6 +23,16 @@ const Header = () => {
           <h1 className="site-title">Pragmatisch</h1>
         </div>
 
+        {/* Desktop Nav */}
+        <nav className="desktop-nav">
+          <ul className="desktop-nav-list">
+            <li onClick={() => handleNavigation("/")}>Home</li>
+            <li onClick={() => handleNavigation("/contact")}>Contact</li>
+            <li onClick={() => handleNavigation("/ervaring")}>Ervaring</li>
+            <li onClick={() => handleNavigation("/producten")}>Producten</li>
+          </ul>
+        </nav>
+
         {/* Flags + Hamburger */}
         <div className="right-controls">
           <div className="flags">
@@ -30,12 +40,14 @@ const Header = () => {
             <span>🇳🇱</span>
           </div>
 
+          {/* Only show hamburger on mobile */}
           <button className="hamburger-btn" onClick={toggleMenu}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
       </div>
 
+      {/* Mobile nav menu */}
       {isOpen && (
         <nav className="mobile-nav">
           <ul className="mobile-nav-list">

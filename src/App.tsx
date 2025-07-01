@@ -5,6 +5,7 @@ import Header from "./componens/header.tsx";
 import HomePage from "./pages/home.tsx";
 import ContactPage from "./pages/contact.tsx";
 import Experions from "./pages/Experions.tsx";
+import Productpage from "./pages/products.tsx";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/ervaring" element={<Experions />} />
-        <Route path="/producten" element={<ContactPage />} />
+        <Route path="/producten" element={<Productpage />} />
         <Route path="*" element={<Navigate to="/HomePage" />} />
       </Routes>
       <Footer />
