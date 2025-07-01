@@ -3,7 +3,8 @@ import "./style/contact.css";
 const ContactPage = () => {
   return (
     <main>
-      <h1>contact </h1>
+      <h1>contact</h1>
+      <h2>dit is een test</h2>
     </main>
   );
 };
