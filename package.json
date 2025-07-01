@@ -1,6 +1,6 @@
 {
   "name": "pragmatisch_back-end",
-  "homepage": "https://stijnsepter.github.io/pragmatisch/",
+  "homepage": "https://stijnsepter.github.io/pragmatisch/home",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages-d dist"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.10",
