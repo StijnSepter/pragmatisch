@@ -22,3 +22,9 @@ footer .divider {
 footer .copyricht {
     white-space: nowrap;
 }
+
+@media (max-width: 450px) {
+    footer .divider {
+        display: none;
+    }
+}
