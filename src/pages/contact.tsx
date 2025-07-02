@@ -4,8 +4,14 @@ const ContactPage = () => {
   return (
     <main>
       <h1>contact</h1>
-      <h2>dit is een</h2>
-      <h3>hoi</h3>
+      <form>
+        <label htmlFor="">name*</label>
+        <input type="text" /> <br />
+        <label htmlFor="">subject*</label>
+        <input type="text" /> <br />
+        <label htmlFor=""></label>
+        <input type="texteria" />
+      </form>
     </main>
   );
 };
