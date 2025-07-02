@@ -25,7 +25,7 @@ function App() {
         <Route path="/pragmatisch/contact" element={<ContactPage />} />
         <Route path="/pragmatisch/ervaring" element={<Experions />} />
         <Route path="/pragmatisch/producten" element={<ProductPage />} />
-        <Route path="*" element={<Navigate to="/HomePage" />} />
+        <Route path="*" element={<Navigate to="/pragmatisch/HomePage" />} />
       </Routes>
       <Footer />
     </>
