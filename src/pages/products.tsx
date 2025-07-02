@@ -1,4 +1,6 @@
-const Productpage = () => {
+// import React form "react"
+
+const ProductPage = () => {
   return (
     <main>
       <h1>producten</h1>
@@ -6,4 +8,4 @@ const Productpage = () => {
   );
 };
 
-export default Productpage;
+export default ProductPage;

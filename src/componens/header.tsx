@@ -26,10 +26,16 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="desktop-nav">
           <ul className="desktop-nav-list">
-            <li onClick={() => handleNavigation("/")}>Home</li>
-            <li onClick={() => handleNavigation("/contact")}>Contact</li>
-            <li onClick={() => handleNavigation("/ervaring")}>Ervaring</li>
-            <li onClick={() => handleNavigation("/producten")}>Producten</li>
+            <li onClick={() => handleNavigation("/pragmatisch/")}>Home</li>
+            <li onClick={() => handleNavigation("/pragmatisch/contact")}>
+              Contact
+            </li>
+            <li onClick={() => handleNavigation("/pragmatisch/ervaring")}>
+              Ervaring
+            </li>
+            <li onClick={() => handleNavigation("/pragmatisch/producten")}>
+              Producten
+            </li>
           </ul>
         </nav>
 
