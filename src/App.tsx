@@ -12,20 +12,14 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Navigate to="/pragmatisch/home" />} />
-        <Route
-          path="/pragmatisch"
-          element={<Navigate to="/pragmatisch/home" />}
-        />
-        <Route
-          path="/pragmatisch/Homepage"
-          element={<Navigate to="/pragmatisch/home" />}
-        />
-        <Route path="/pragmatisch/home" element={<HomePage />} />
-        <Route path="/pragmatisch/contact" element={<ContactPage />} />
-        <Route path="/pragmatisch/ervaring" element={<Experions />} />
-        <Route path="/pragmatisch/producten" element={<ProductPage />} />
-        <Route path="*" element={<Navigate to="/pragmatisch/HomePage" />} />
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/pragmatisch" element={<Navigate to="/home" />} />
+        <Route path="/Homepage" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/ervaring" element={<Experions />} />
+        <Route path="/producten" element={<ProductPage />} />
+        <Route path="*" element={<Navigate to="/HomePage" />} />
       </Routes>
       <Footer />
     </>
