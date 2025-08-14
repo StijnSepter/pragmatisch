@@ -1,5 +1,5 @@
 import "./style/home.css";
-import papaImage from "../assets/papa.png";
+import Janwillem from "../assets/Janwillem.png";
 
 const HomePage = () => {
   return (
@@ -8,31 +8,34 @@ const HomePage = () => {
       <div className="main_container">
         <div>
           <p>
-            Jan-Willem Septer is een ervaren CEO, CFO, COO en adviseur met veel
-            ervaring in bedrijfstransformaties. Na een succesvolle carrière in
-            diverse Logistieke, IT en Financiële leiderschapsfuncties is hij in
-            2014 met Pragmatisch zijn eigen consultancy en
-            interim-managementbureau gestart. Hiervoor heeft Jan-Willem 12 jaar
-            als directielid bij verschillende Pon ondernemingen gewerkt en
-            leidinggegeven aan bedrijfstransformaties. Pon is een internationaal
-            opererend handel-, engineering en productiebedrijf met een omzet van
-            ca. € 10 miljard. Volkswagen en Caterpillar zijn belangrijke merken
-            die Pon vertegenwoordigd. In de 7 jaar daarvoor was Jan-Willem een
-            business development en implementatie leider bij TNT Logistics
-            (tegenwoordig Ceva). Sinds 2024 is hij tevens als partner
-            aangesloten bij PJ Strategy (https://pjstrategy.com/) Hij is in
-            staat om samen met het team visie en strategie te ontwikkelen en te
-            vertalen in concrete bedrijfsdoelstellingen en om processen, mensen
-            en de bijbehorende control-structuur dusdanig te organiseren dat
-            deze doelen ook gehaald worden. Hij heeft zich bewezen in het bouwen
-            en professionaliseren van organisaties en het ontwikkelen van
-            medewerkers naar een hoger niveau. Jan-Willem heeft een Ingenieurs
-            diploma in Logistiek Management, een Master in Business
-            Administration, een Post doctoraal diploma in Finance & Controlling
-            en een executive degree in Operations & Technology.
+            Organisaties naar een volgende fase brengen DNA Ontwikkelen van
+            mensen en organisaties om zo jouw bedrijf succesvoller te maken. Het
+            verbinden van praktijk met theorie om tot praktische, nuttige en
+            bruikbare plannen te komen en die vervolgens ook te implementeren.
+            Samen met jouw team werken aan analyses en creëren van strategische
+            opties, zonder de praktische kant en uitvoerbaarheid uit het oog te
+            verliezen. Te vaak zien we gevestigde consultants en managers de
+            mooiste analyses, presentaties en plannen maken, die uiteindelijk
+            niet gerealiseerd worden, omdat de praktische kant /uitvoerbaarheid
+            en eigenaarschap onvoldoende aandacht krijgt. Dit kan en moet
+            anders! Motto ‘Managers schrijven memo’s geen rapporten’ Het is niet
+            moeilijk om een lijvig rapport te schrijven, maar de essentie vatten
+            op een A4 of in een prikkelend gesprek zodat je organisatie er wat
+            mee kan en doet, daar gaat het om. Het resultaat is jouw succes.
+            Pragmatisch komt van het Griekse woord ‘Pragma’, wat handeling
+            betekent. De pragmaticus gaat uit van feiten, oorzaken en gevolgen,
+            trekt daar lering uit en gaat dan over tot handelen. Pragmatisch
+            betekent praktisch, nuttig en bruikbaar. Het pragmatisme is een
+            filosofische stroming gekenmerkt door de focus op het verbinden van
+            de praktijk met de theorie, die volgens het pragmatisme niet los van
+            elkaar staan. Het bekendst is wellicht hun pragmatische theorie van
+            de waarheid die stelt dat een opvatting waar is als het in de
+            praktijk werkt. Waarheid wordt dus niet gedefinieerd aan de hand van
+            een correspondentierelatie of coherentie, maar in termen van
+            praktisch nut en maatschappelijk voordeel.
           </p>
         </div>
-        <img src={papaImage} alt="foto" className="image" />
+        <img src={Janwillem} alt="foto" className="image" />
       </div>
     </main>
   );

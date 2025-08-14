@@ -25,6 +25,7 @@ h1 {
 }
 
 .image {
+    border-radius: 1.5rem;
     padding: 0 3%;
     width: 100%;
     max-width: 350px;

@@ -20,6 +20,11 @@
     height: 2rem;
 }
 
+.logo,
+.header-top:hover {
+    cursor: pointer;
+}
+
 .site-title {
     font-size: 1.5rem;
     font-weight: 600;
@@ -131,5 +136,11 @@
     }
     .header-top {
         justify-content: space-between;
+    }
+}
+
+@media (min-width: 480px) {
+    .header-top {
+        padding: 0.5rem 1rem;
     }
 }

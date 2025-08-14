@@ -3,6 +3,7 @@ import { Menu, X } from "lucide-react";
 import logo from "../assets/logo_pragmatisch.png";
 import { useNavigate } from "react-router-dom";
 import "./css/header.css";
+import LanguageSwitcher from "./languageSwitch.tsx";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,17 +28,16 @@ const Header = () => {
         <nav className="desktop-nav">
           <ul className="desktop-nav-list">
             <li onClick={() => handleNavigation("/")}>Home</li>
-            <li onClick={() => handleNavigation("/contact")}>Contact</li>
             <li onClick={() => handleNavigation("/ervaring")}>Ervaring</li>
             <li onClick={() => handleNavigation("/producten")}>Producten</li>
+            <li onClick={() => handleNavigation("/contact")}>Contact</li>
           </ul>
         </nav>
 
         {/* Flags + Hamburger */}
         <div className="right-controls">
           <div className="flags">
-            <span>🇬🇧</span>
-            <span>🇳🇱</span>
+            <LanguageSwitcher />
           </div>
 
           {/* Only show hamburger on mobile */}
